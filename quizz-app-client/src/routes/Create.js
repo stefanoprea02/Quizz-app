@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faShuttleSpace } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import blob1 from "../images/blob1.png"
 import blob2 from "../images/blob2.png"
 
-export default function(){
+export default function Create(){
 
     const [error, setError] = React.useState("");
     const [formData, setFormData] = React.useState({
@@ -35,7 +35,7 @@ export default function(){
             return;
         }
 
-        await fetch('http://localhost:3000/users/find-user', {
+        await fetch('http://localhost:8080/users/find-user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -50,7 +50,7 @@ export default function(){
     React.useEffect(function(){
         if(error !== ""){
             if(error === "$nouser"){
-                fetch("http://localhost:3000/users/create", {
+                fetch("http://localhost:8080/users/create", {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',
@@ -59,7 +59,7 @@ export default function(){
                     body: JSON.stringify(formData)
                 }, {credentials: 'include'})
 
-                window.location.replace('http://localhost:3001');
+                window.location.replace('http://localhost:3000');
             }
         }
     }, [error]);

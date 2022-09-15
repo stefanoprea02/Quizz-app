@@ -15,7 +15,7 @@ const error = DBG('quizz:error-users');
 let obj;
 
 router.post("/login",
-  passport.authenticate("local", {failureRedirect: 'http://localhost:3001/Login'}),
+  passport.authenticate("local", {failureRedirect: 'http://localhost:3000/Login'}),
     function(req, res){
       res.redirect(req.headers.origin);
 });

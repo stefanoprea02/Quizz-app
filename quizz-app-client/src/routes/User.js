@@ -13,7 +13,7 @@ export default function User(){
     });
 
     function getLogged(){
-        fetch('http://localhost:3000/users/logged-user', {credentials: 'include'})
+        fetch('http://localhost:8080/users/logged-user', {credentials: 'include'})
         .then((response) => response.json())
         .then((data) => {
             let string = data.answers;
@@ -38,9 +38,9 @@ export default function User(){
     },[]);
 
     function destroy(){
-        fetch('http://localhost:3000/users/destroy', {credentials: 'include'})
+        fetch('http://localhost:8080/users/destroy', {credentials: 'include'})
 
-        window.location.replace('http://localhost:3001');
+        window.location.replace('http://localhost:3000');
     }
 
     return (

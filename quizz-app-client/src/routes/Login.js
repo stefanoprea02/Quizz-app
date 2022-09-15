@@ -8,7 +8,7 @@ export default function Login(){
 
     return (
         <> 
-            <form className="login-form" action="http://localhost:3000/users/login" method="POST">
+            <form className="login-form" action="http://localhost:8080/users/login" method="POST">
                 <Link to='/'><FontAwesomeIcon icon={faHome} className="home" /></Link>
                 <input type="text" id="username" name="username" placeholder="username"></input>
                 <input type="password" id="password" name="password" placeholder="password"></input>

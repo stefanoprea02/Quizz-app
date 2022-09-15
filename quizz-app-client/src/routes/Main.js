@@ -6,7 +6,6 @@ import {nanoid} from "nanoid";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import queryString from 'query-string';
 
 export default function Main(){
 
@@ -97,11 +96,11 @@ export default function Main(){
     async function callAPI(a, b){
         let user;
 
-        await fetch('http://localhost:3000/users/logged-user', {credentials: 'include'})
+        await fetch('http://localhost:8080/users/logged-user', {credentials: 'include'})
             .then((response) => response.json())
             .then((data) => user = data.username);
 
-        await fetch('http://localhost:3000/users/update', {
+        await fetch('http://localhost:8080/users/update', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json', 
