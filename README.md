@@ -1,6 +1,19 @@
-# Quizz-app
+# Quizzical
+
+Quizz app created using HTML, CSS, JavaScript, React, NodeJS.
+
+<h2>How it works</h2>
+
+&nbsp;&nbsp;When starting the application every user needs to register. When creating an account it checks to see if the user already exists or if there are empty fields. If the data is correct it is sent to the server where the password gets encrypted and the new user is stored on a SQLite database.
+
+&nbsp;&nbsp;After starting the quizz, the application gets a set of questions from an online database that are then rendered using react components.
+
+&nbsp;&nbsp;When you press Check Answers the application checks too see how many answers are correct and it send a request to update user stats.
+
+&nbsp;&nbsp;When logging in, a new session is created to keep track of the user. The session is terminated when logging out or deleting the account.
+
 <details>
-  <summary>The title of the image group</summary>
+  <summary><h2>Screenshots from the app</h2></summary>
   <details>
     <summary>First page</summary>
     <img src="/readme-images/Sign-in-page.png" name="First-page">
@@ -14,11 +27,11 @@
     <img src="/readme-images/Sign-up-page.png" name="Sign-up-page">
   </details>
   <details>
-    <summary>Sign up user error page</summary>
+    <summary>Name in use error page</summary>
     <img src="/readme-images/Sign-up-user-error.png" name="Sign-up-user-error">
   </details>
   <details>
-    <summary>Sign up user fields page</summary>
+    <summary>Fields incomplete page</summary>
     <img src="/readme-images/Sign-up-fields-error.png" name="Sign-up-fields-error">
   </details>
   <details>
