@@ -27,14 +27,6 @@ Quizz app created using HTML, CSS, JavaScript, React, NodeJS.
     <img src="/readme-images/Sign-up-page.png" name="Sign-up-page">
   </details>
   <details>
-    <summary>Name in use error page</summary>
-    <img src="/readme-images/Sign-up-user-error.png" name="Sign-up-user-error">
-  </details>
-  <details>
-    <summary>Fields incomplete page</summary>
-    <img src="/readme-images/Sign-up-fields-error.png" name="Sign-up-fields-error">
-  </details>
-  <details>
     <summary>Main page</summary>
     <img src="/readme-images/Main-page.png" name="Main-page">
   </details>
